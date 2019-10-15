@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>Dewan Pimpinan Wilayah</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png"></link>
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png"></link>
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png"></link>
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png"></link>
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png"></link>
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png"></link>
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png"></link>
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png"></link>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png"></link>
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32"></link>
+    <link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192"></link>
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96"></link>
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16"></link>
+    <link rel="manifest" href="icons/manifest.json"></link>
+    <meta name="msapplication-TileColor" content="#da532c"></meta>
+    <meta name="msapplication-TileImage" content="icons/mstile-144x144.png"></meta>
+    <meta name="theme-color" content="#ffffff"></meta>
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="css/font-awesome.min.css" rel="stylesheet"></link>
+    <link href="css/nasdem.css" rel="stylesheet"></link>
+    <link href="css/owl.carousel.css" rel="stylesheet"></link>
+    <!--if lt IE 9
+    <script language="javascript" type="text/javascripit" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script language="javascript" type="text/javascripit" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    -->
+    <!--if lt IE 7<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css" ></link>
+    -->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-right"><a id="searchBox" href="" class="hidden-xs"><i class="glyphicon glyphicon-search"></i></a>
+            <form role="search" action="" method="get" class="navbar-form">
+              <div class="form-group float-width">
+                <input type="text" name="s" placeholder="Search..." class="form-control">
+                <input type="submit" value="GO" class="form-control">
+              </div>
+            </form><a href="">login</a><a href="">bergabung</a><a href=""><img src="images/twitter.svg" width="20" height="20"></img></a><a href=""><img src="images/facebook.svg" width="20" height="20"></img></a>
+          </div>
+          <div class="visible-xs navMiddle">
+            <div role="group" class="btn-group btn-group-justified"><a href="index.html" class="btn active">Home</a><a href="o250.html" class="btn">O250</a><a href="" class="btn">partai<span class="caret"></span></a><a href="restorasi.html" class="btn dropdown-child">Restorasi</a><a href="sejarah.html" class="btn dropdown-child">Sejarah</a><a href="indonesia_memilih.html" class="btn dropdown-child">Indonesia Memilih</a><a href="susunan_dpp.html" class="btn dropdown-child">DPP</a><a href="susunan_dpw.html" class="btn dropdown-child">DPW</a><a href="susunan_dpd.html" class="btn dropdown-child">DPD</a><a href="visi_misi.html" class="btn dropdown-child">Visi Misi</a> <a href="#" class="btn">pemilu<span class="caret"></span></a><a href="http://fraksinasdem.org/" class="btn dropdown-child">Profil Dewan</a><a href="#" class="btn dropdown-child">Profil Pilkada</a><a href="#" class="btn dropdown-child">Aplikasi Saksi</a><a href="news.html" class="btn">news</a><a href="store.html" class="btn">store</a><a href="kontak.html" class="btn">kontak</a></div>
+            <form action="" method="get">
+              <div class="form-group float-width">
+                <input type="text" name="s" placeholder="Search..." class="form-control">
+                <input type="submit" value="GO" class="form-control">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /.navbar-collapse-->
+      </div>
+    </nav>
+    <div class="nav-container hidden-xs">
+      <div class="container container-fluid navMiddle text-center">
+        <div role="group" class="btn-group btn-group-justified">
+          <div id="navbar2" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="o250.html">O250</a></li>
+              <li class="dropdown"><a data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">partai<span class="caret"></span></a>
+				<ul role="menu" class="dropdown-menu">
+					<li><a href="visi_misi.html">Visi Misi</a></li>
+					<li><a href="restorasi.html">Restorasi</a></li>
+					<li><a href="sejarah.html">Sejarah</a></li>
+					<li><a href="indonesia_memilih.html">Indonesia Memanggil</a></li>
+					<li><a href="susunan.html">Susunan Pengurus</a></li>
+				</ul>
+			  </li>
+              <li class="dropdown"><a data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Pemilu<span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="http://fraksinasdem.org/">Profil Dewan</a></li>
+                  <li><a href="#">Profil Pilkada</a></li>
+                  <li><a href="#">Aplikasi Saksi</a></li>
+                </ul>
+              </li>
+              <li><a href="news.html">news</a></li>
+              <li><a href="store.html">store</a></li>
+              <li><a href="kontak.html">kontak</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container container-fluid padding-big">
+        <div class="news-main">
+          <div class="text-left details">
+            <h1 class="text-orange text-medium">Dewan Pimpinan Wilayah</h1>
+            <p><strong class="text-orange">PENGURUS INTI DEWAN PIMPINAN WILAYAH PARTAI NasDem SELURUH INDONESIA</strong></p>
+            <p> </p>
+            <table width="100%" class="table-bordered table-striped table-condensed table-responsive">
+              <tbody>
+                <tr>
+                  <td>P<strong>rovinsi</strong></td>
+                  <td><strong>Nama</strong></td>
+                  <td><strong>Jabatan</strong></td>
+                </tr>
+                <tr>
+                  <td rowspan="3">ACEH</td>
+                  <td>H. Zaini Djalil</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Ramadhana Lubis</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Eddy Zuardy</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SUMUT</td>
+                  <td>H.M. Ali Umri, SH, M.Kn</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Iskandar, ST</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>A King Junior</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SUMBAR</td>
+                  <td>Willy Aditiya</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Asril SE</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Rahmawati, SH</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">RIAU</td>
+                  <td>Ir. Iskandar Hoesin, MH  </td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>H. Gafar Effendi, ST, MM</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Conny Sowarno</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">KEPRI</td>
+                  <td>H. Muhammad Amin, SE</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Poltak Emerson Tarihoran, Ssn.MM</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Sahmadin Sinaga SE MM</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">JAMBI</td>
+                  <td>H.Agus S Roni, SH,MH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Syafboni Syafar, SH</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Muhammad Imaduddin</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SUMSEL</td>
+                  <td>Ir. H. Syahrial Oesman</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Ir. Suparman Romans</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Noversa Sabirin, Sp., S.Si</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">BABEL</td>
+                  <td>Datuk H. Ahmad Ramli Sutanegara, SH. Msi</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Abdul Wahab Syahroni</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Drs. Anton Agus Mustawi, MM</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">BENGKULU</td>
+                  <td>Dedy Ermansyah,SE</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Erna Sari Dewi,SE</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Yuwono Pintadi,SE</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">LAMPUNG</td>
+                  <td>Hi.A.Zamzani Yasin</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Dharma Wijaya, SH, MH</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Drs. Hi. Bainuddin Hendry, MH</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">DKI</td>
+                  <td>Drs. M. Hariadi Anwar </td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Drs. Inggard Joshua</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Ahmad Sahroni</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">BANTEN</td>
+                  <td>IRJEN POL.(PURN) Drs. H R Abubakar Nataprawira SH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Uten Sutendy</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>HJ. Hertin Kartika Ningrum</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">JAWA BARAT</td>
+                  <td>Drs. H. Eka  Santosa</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Drs. H. M Rachmat, M.Si</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Ade Sudrajat</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">DIY</td>
+                  <td>H. Subardi, SH., MH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Suryo Putro Nugroho</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>H. Suparjiono</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">JAWA TENGAH</td>
+                  <td>I.GK. MANILA</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Dra. Zuhar Mahsun, M.Si</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Danan Sumardi, SE</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">JATIM</td>
+                  <td>Laksamana TNI (Purn) Tedjo Edhy Purdijatno</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>H. Aminurokhman, SE, MM.</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Yayuk Emilia, SE</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">BALI</td>
+                  <td>Ida Bagus Oka Gunastawa, SE</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>I Ketut Gde Adi Saputra</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>I G. N. Bagus Eka Subagiartha</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">NTB</td>
+                  <td>H. Darmawan</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>H. Efendi SH</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Lukmanulhakim</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">NTT</td>
+                  <td>Drs. Jacki Uly, MH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Alexander Take Ofong, S.Fil</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Iswati Rihi Ha’u</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" style="height:61px; width:111px">KALBAR</td>
+                  <td>H. Syarif Abdullah Alkadrie, SH, MH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Michael Yan Sriwidodo, SE, MM</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td style="height:21px; width:429px">Bong Kim Sin, ST, MM</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">KALTENG</td>
+                  <td>Faridawaty Darland Atjeh, SE., MM </td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Ary Yudhaningsih, SE., MSI</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>HJ.Mukarramah, S.PD</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">KALSEL</td>
+                  <td>H. Guntur Prawira, SE</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Bierhasani R Wilady, S.SOS., S.IP</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Ir. Hermanus H Wenas, SH</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">KALTIM</td>
+                  <td>DR. H. Ahmad Amins, MM</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Hj. Fatimah Asyari, SH., M.HUM</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>H. Saifudin Zuhri, SE</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">KALTARA</td>
+                  <td>H.M.Yahya HT, SH.,MH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Steve Singgih Wibowo, ST.,MMP</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>dr. Yuli Indrayani</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SULUT</td>
+                  <td>Meidy Revly Sumerah</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Drs. Henky Lengkong, M.Sc.</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Jody Ebenheazer Lonteng</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">GORONTALO</td>
+                  <td>dr. Makmun Djaafara</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Jefri A. Dunda</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Drs. Abdullah Paneo</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SULTENG</td>
+                  <td>Ahmad HI. M. ALI, SE  </td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Ibrahim A. Hafid</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Hartati N.S</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SULSEL</td>
+                  <td>Ir. H. Mubyl Handaling</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Arum Spink, S.Hi</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Fajar Misba Pratama Harun, SE</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SULTRA</td>
+                  <td>H. Ali Mazi, SH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Ichwan Mappilawa, S.Sos, M.Si</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Ir. Ariyanti Polopadang</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">SULBAR</td>
+                  <td>H.Arifin Nurdin,SE.MS.AK</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Muslimin, A.MD.KOM</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Fandi Tahir, S.PI</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">MALUKU</td>
+                  <td>Hamdani Laturua, SH</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Abdullah Marasabessy, SE</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Henny Adriana F. Matruty</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">MALUT</td>
+                  <td>Ishak Naser, SE</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Helmi Umar Muchsin, SE</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Drs. Yusuf Salama</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">PAPUA</td>
+                  <td>Mathius Awoitauw, SE, M.Si</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>H. Sulaeman L Hamzah</td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Dwita Handayani, A.Md</td>
+                  <td>Bendahara</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">PAPUA BARAT</td>
+                  <td>dr. Sophian Andi</td>
+                  <td>Ketua</td>
+                </tr>
+                <tr>
+                  <td>Rocky R. L. Mansawan, SE </td>
+                  <td>Sekretaris</td>
+                </tr>
+                <tr>
+                  <td>Marsia Labessy </td>
+                  <td>Bendahara</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-footer">
+      <div class="container container-fluid">
+        <div class="col-xs-4">&copy; 2015. Partai NasDem.<br></br><a href="">Bantuan</a><br></br><a href="">Kebijakan Privasi</a><br></br><a href="">Ketentuan Layanan</a></div>
+        <div class="col-xs-4"><a href="index.html">Home</a><br></br><a href="o250.html">O250</a><br></br><a href="">Partai</a><br></br><a href="">Pemilu</a></div>
+        <div class="col-xs-4"><a href="">News</a><br></br><a href="">Store</a><br></br><a href="">Kontak</a><br></br><a href="">Donasi</a></div>
+      </div>
+    </div>
+    <script src="js/holder.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script language="javascript">
+      $(document).ready(function(){
+        $('.navbar-right').on('click', '#searchBox', function(event) {
+          event.preventDefault();
+          var display = $('[role="search"]').css('display');
+          if(display=='none'){
+            $('[role="search"]').slideToggle('fast');
+            $(this).find('i').toggleClass('glyphicon-search',false).toggleClass('glyphicon-remove',true).toggleClass('bg-grey',true);
+          }else{
+            $('[role="search"]').slideToggle('fast', function(){
+              $('#searchBox').find('i').toggleClass('glyphicon-search',true).toggleClass('glyphicon-remove',false).toggleClass('bg-grey',false);
+            });
+          }
+        });
+      });
+      $('.i-checks').iCheck({
+        checkboxClass: 'icheckbox_square-orange',
+        radioClass: 'iradio_square-orange',
+      });
+    </script>
+  </body>
+</html>

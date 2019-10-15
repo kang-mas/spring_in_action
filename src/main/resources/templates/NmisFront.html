@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout_front">
+<head>
+<title>NMIS - NasDem Management Information System</title>
+</head>
+<body>
+
+	<th:block layout:fragment="front-body-content">
+		<div class="container container-fluid sliderArea" layout:fragment="front-sliderArea">
+			<div id="owl-nasdem" class="owl-carousel">
+				<div class="item">
+					<div>
+						<img th:src="@{/front/images/slider/1a.jpg}"></img>
+						<span>
+							<div class="slide_text">"KETUA Umum Partai NasDem Surya Paloh menginspeksi barisan Garda Pemuda
+								NasDem dalam sebuah upacara di Jakarta. Masa depan bangsa dan negara ada di
+								pundak mereka." (Foto: Media Indonesia)
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="item">
+					<div>
+						<img th:src="@{/front/images/slider/2a.jpg}"></img>
+						<span>
+							<div class="slide_text">"KETUA Umum Partai NasDem Surya Paloh menjelaskan tentang ICT NasDem kepada
+								Presiden Sierra Leone, Afrika, Ernest Bai Koroma saat berkunjung ke DPP Partai
+								NasDem di Jl RP Suroso, Menteng, Jakarta Pusat, April 2015.  Koroma sangat
+								terkesan dengan sistem ICT NasDem yang disebutnya sangat efektif dalam mendata
+								anggota partai." (Foto: Media Indonesia)</div>
+						</span>
+					</div>
+				</div>
+				<div class="item">
+					<div>
+						<img th:src="@{/front/images/slider/3a.jpg}"></img>
+						<span>
+							<div class="slide_text">
+								"SURYA Paloh, Ketua Umum Partai NasDem tersenyum saat sebuah 'mahkota'
+								dikenakan di kepalanya ketika ia sedang melakukan kunjungan kerja ke daerah. Ke
+								daerah, Surya Paloh menyapa kader-kader NasDem." (Foto: Media Indonesia)
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="item">
+					<div>
+						<img th:src="@{/front/images/slider/4a.jpg}"></img><span>
+							<div class="slide_text">
+								"KETUA Umum Partai NasDem Surya Paloh saat meresmikan ruang Fraksi Partai
+								NasDem DPR-RI di Senayan Jakarta. Ia didampingi Menteri Agraria Ferry Mursyidan
+								Baldan (kiri), Ketua Fraksi NasDem DPRRI Victor Laiskodat (ketiga dari kiri), dan
+								Sekjen Partai NasDem yang juga anggota DPR Patrice Rio Capella (kanan)." (Foto: Media Indonesia)
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="item">
+					<div>
+						<img th:src="@{/front/images/slider/5a.jpg}"></img><span>
+							<div class="slide_text">
+								"JANGAN kaget. Inilah gaya Ketua Umum Partai NasDem Surya Paloh saat menemui
+								para kader partai pengusung restorasi ini. Surya Paloh bercanda ria dengan pemilik
+								sebuah warung makan di Jawa Timur ketika masa kampanye Pemilu 2014." (Foto: Media Indonesia)
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="item">
+					<div>
+						<img th:src="@{/front/images/slider/6a.jpg}"></img><span>
+							<div class="slide_text">
+								"SURYA Paloh memberikan pidato saat peluncuran buku 'Mari Bung Rebut Kembali'
+								yang ditulis Willy Aditya di Bandung." (Foto: Media Indonesia)
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-container nav-home nav-cyan">
+			<div class="container container-fluid navMiddle text-center no-margin-top">
+				<div role="group" class="btn-group btn-group-justified btn-gabung">
+
+					<div class="col-xs-12 col-md-6">
+						<form th:action="@{/register/checksin}" method="post">
+							<div class="row">
+								<div class="col-xs-4 col-md-3 row pull-right">
+									<button type="submit" class="btn-orange btn btn-ktp">Daftar Baru</button>
+								</div>
+								<div class="col-xs-8 col-md-9 row pull-left">
+									<input type="text" name="sin" placeholder="Masukkan No KTP Anda"></input>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<form th:action="@{/register/checkmin}" method="post">
+							<div class="row">
+								<div class="col-xs-4 col-md-3 row pull-right">
+									<button type="submit" class="btn-orange btn btn-warning">Daftar Ulang</button>
+								</div>
+								<div class="col-xs-8 col-md-9 row pull-left">
+
+									<input type="text" name="min" placeholder="Masukkan No KTA Anda"></input>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper backGrey">
+			<div class="container-full">
+				<div class="container container-fluid">
+					<div class="row con-gabung padding-big">
+						<div class="col-xs-12 col-md-3">
+							<a class="btn btn-xlarge btn-blue text-center not-btn">
+								<b>Sumbangkan</b><br></br>Semangat Perubahanmu
+							</a>
+						</div>
+						<div class="col-xs-12 col-md-3">
+							<a class="btn btn-xlarge btn-blue text-center not-btn">
+								<b>Suarakan</b><br></br>Semangat Perubahanmu
+							</a>
+						</div>
+						<div class="col-xs-12 col-md-3">
+							<a class="btn btn-xlarge btn-blue text-center not-btn">
+								<b>Satukan</b><br></br>Semangat Perubahanmu
+							</a>
+						</div>
+						<div class="col-xs-12 col-md-3 text-right">
+							<a th:href="@{/register/registersin}" class="btn btn-xlarge btn-orange btn-blue text-center big-text">
+								<b>Gabung<i class="glyphicon glyphicon-chevron-right"></i></b>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-full text-center">
+				<img th:src="@{/front/images/banner/home.jpg}" class="image-full"></img>
+			</div>
+			<div class="container container-fluid padding-big">
+				<div class="news-main">
+					<h2 class="text-blue text-capitalize">Topik Utama</h2>
+					<div class="text-left col-xs-12">
+						<img alt="" align="left"></img>
+						<div class="date"></div>
+						<a th:href="@{#}">
+							<h1 class="judul top-10"></h1>
+						</a>
+						<div class="headLine"></div>						
+						<a th:href="@{#}" class="more"></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<h2 class="text-blue text-capitalize">berita terbaru</h2>
+				<div class="row news-home">
+					
+				</div>
+			</div>
+		</div>
+
+	</th:block>
+
+	<th:block layout:fragment="front-js-addition">
+
+		<script th:src="@{/front/js/front-index.js}"></script>
+
+	</th:block>
+</body>
+</html>
