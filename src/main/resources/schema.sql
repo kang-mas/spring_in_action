@@ -1,3 +1,14 @@
+create table if not exists Produk (
+  id identity,
+  name varchar(25) not null,
+  ukuran varchar(4) not null,
+  hargaKlk varchar(3) not null,
+  hargaBdl varchar(3) not null,
+  hargaBkl varchar(3) not null
+);
+
+create table if not exist Pesanan(
+  
 create table if not exists Ingredient (
   id varchar(4) not null,
   name varchar(25) not null,
