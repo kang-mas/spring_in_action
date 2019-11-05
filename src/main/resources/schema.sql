@@ -8,7 +8,9 @@ create table if not exists Produk (
 );
 
 create table if not exist Pesanan(
+  id identity,
   
+ );
 create table if not exists Ingredient (
   id varchar(4) not null,
   name varchar(25) not null,
